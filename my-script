@@ -1,0 +1,8 @@
+Git Commands
+
+git status
+git add filenames
+git commit -m "reason for adding files"
+git config -global "maladikrishnakishore@gmail.com"
+
+git push -u origin branchname
