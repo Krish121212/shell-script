@@ -2,9 +2,9 @@
 
 number=$1
 
-if [  $number  -lt  5  ]
+if [ $number -gt 10 ]
 then
-    echo "entered $number is more than 5"
+    echo "entered $number is more than 10"
 else 
-    echo "entered $number is less than 5"
+    echo "entered $number is less than 10"
 fi
