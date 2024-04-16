@@ -3,9 +3,8 @@
 number=$1
 
 if [ $number -gt 5 ]
-    then
+then
     echo "entered $number is more than 5"
-
-    else 
+else 
     echo "entered $number is less than 5"
-    fi
+fi
