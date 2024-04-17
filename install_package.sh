@@ -8,6 +8,6 @@ then
     echo "please run $package package with super user access"
     exit 1
 else
-    dnf install $package -y
+    dnf remove $package -y
     echo "installation of $package package is Success"
 fi
