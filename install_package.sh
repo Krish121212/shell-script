@@ -9,3 +9,8 @@ then
     exit 1
 fi
 dnf install $package -y
+
+if [ $? != 0 ]
+then
+    echo "installation of $package package is failure"
+fi
