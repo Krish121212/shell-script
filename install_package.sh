@@ -9,5 +9,5 @@ then
     exit 1
 else
     dnf install $package -y | cat > status
-    echo "installation of $package package is Success" | mpack -s "install status" -a "/c/users/surya/Desktop/Devops/repos/shell-script/status"  maladikrishnakishore@gmail.com
+    echo "installation of $package package is Success" | mail -s "install status" -a /c/users/surya/Desktop/Devops/repos/shell-script/status  maladikrishnakishore@gmail.com
 fi
