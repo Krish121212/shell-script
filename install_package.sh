@@ -8,7 +8,7 @@ then
     echo "please run this package with super user access"
     exit 1
 fi
-dnf install $package -y
+dnf installl $package -y
 
 if [ $? != 0 ]
 then
