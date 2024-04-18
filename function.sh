@@ -1,6 +1,8 @@
 #!/bin/bash/
 
 userid=$(id -u)
+install=$1
+install1=$2
 
 Validate(){
 if [ $userid != 0 ]
@@ -12,8 +14,8 @@ else
 fi
 }
 
-dnf install mysql -y
-Validate $? "Installing"
+dnf install $install -y
+Validate $? "Installing $install"
 
-dnf install nginx -y
-Validate $? "Installing"
+dnf install $install1 -y
+Validate $? "Installing $install1"
