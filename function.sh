@@ -1,3 +1,5 @@
 #!/bin/bash/
 
-$0
+validate(){
+    $0
+}
