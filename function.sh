@@ -2,11 +2,6 @@
 
 userid=$(id -u)
 
-VALIDATE(){
-    echo "Exit status: $1"
-    echo "Installing: $2"
-}
-
 if [ $userid != 0 ]
 then
     echo "please run mysql package with super user access"
@@ -14,6 +9,17 @@ then
 else
     echo "you are super user"
 fi
+
+VALIDATE(){
+    if [ $1 != 0 ]
+    then
+        echo "$2 Failure"
+        exit 1
+    else
+        echo "$2 Success"
+    fi
+}
+
 
 dnf install mysql -y
 VALIDATE $? "Installing mysql"
