@@ -17,8 +17,8 @@ else
 fi
 }
 
-dnf install $install -y &>> $LOGFILE
+dnf install $install -y &>>$LOGFILE
 Validate $? "Installing $install"
 
-dnf install $install1 -y
+dnf install $install1 -y &>>$LOGFILE
 Validate $? "Installing $install1"
