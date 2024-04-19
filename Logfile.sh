@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-SCRIPTNAME=$($0 | cut -d '.' -f1)
+SCRIPTNAME=$(echo $0 | cut -d '.' -f1)
 LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 install=$1
 install1=$2
