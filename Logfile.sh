@@ -2,7 +2,8 @@
 
 userid=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-LOGFILE=/tmp
+SCRIPTNAME=$($0 | cut -d '.' -f1)
+LOGFILE=/tmp/$SCRIPTNAME-$TIMESTAMP.log
 install=$1
 install1=$2
 
@@ -16,7 +17,7 @@ else
 fi
 }
 
-dnf install $install -y
+dnf install $install -y &>> $LOGFILE
 Validate $? "Installing $install"
 
 dnf install $install1 -y
