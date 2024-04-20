@@ -26,7 +26,7 @@ do
         echo -e "Package is already installed : $Yellow SKIPPING $Nor"
     else
         dnf install $i -y &>>$LOGFILE
-        echo -e "Package is instaling : $Green INSTALED $Nor"
+        echo -e "Package is instaling : $Green INSTALLED $Nor"
     fi
 done
 
