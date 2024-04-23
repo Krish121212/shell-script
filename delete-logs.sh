@@ -1,6 +1,6 @@
 #!/bin/bash/
 
-source_directory=/tmp/
+source_directory=/tmp/app/
 
 Red="\e[31m"
 Green="\e[32m"
