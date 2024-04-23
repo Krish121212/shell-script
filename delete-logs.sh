@@ -14,4 +14,4 @@ else
     exit 1
 fi
 
-find /tmp  *.log
+find /tmp/*.log
