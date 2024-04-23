@@ -16,7 +16,7 @@ fi
 
 files=$(find $source_directory*.log -mtime +10)
 
-while IFS=read -r line
+while IFS= read -r line
 do
     echo "Deleting files: $line"
     rm -rf $line
