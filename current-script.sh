@@ -6,7 +6,7 @@ G="\e[32m"
 N="\e[0m"
 
 echo -e "This is $NAME1 from $G current $N SCRIPT"
-
-./Other.script.sh
+echo "PID: $$"
+./Other-script.sh
 
 echo -e "This is $NAME2 from $G current $N SCRIPT"
