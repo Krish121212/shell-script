@@ -8,6 +8,6 @@ N="\e[0m"
 echo -e "This is $NAME1 from $G current $N SCRIPT"
 echo "PID: $$"
 
-./Other-script.sh
+./other-script.sh
 
 echo -e "This is $NAME2 from $G current $N SCRIPT"
