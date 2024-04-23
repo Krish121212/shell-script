@@ -11,6 +11,6 @@ echo "PID: $$"
 ## ./Other-script.sh
 ## PID will be different for above approach
 
-source Other-script.sh
+source /home/ec2-user/shell-script/Other-script.sh
 
 echo -e "This is $NAME2 from $G current $N SCRIPT"
