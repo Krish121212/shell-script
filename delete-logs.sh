@@ -14,4 +14,4 @@ else
     exit 1
 fi
 
-find /tmp/*.log -mtime 2
+find /tmp/*.log +mtime 2
