@@ -1,6 +1,6 @@
 #!/bin/bash/
 
-source_directory=/tmp/app/
+source_directory=/tmp/
 
 Red="\e[31m"
 Green="\e[32m"
@@ -13,3 +13,5 @@ else
     echo -e "$Red source dirctory doesn't exists $Nor"
     exit 1
 fi
+
+find /tmp  *.log
