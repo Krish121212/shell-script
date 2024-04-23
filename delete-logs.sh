@@ -14,4 +14,10 @@ else
     exit 1
 fi
 
-find /tmp/*.log +mtime 2
+files=$(find $source_directory*.log -mtime +10)
+
+while IFS=read -r line
+do
+    echo "Deleting files: $line"
+    rm -rf $line
+done <<< $files
