@@ -8,3 +8,4 @@ FILENAME=archive-$TIMESTAMP.tar.gz
 
 tar -czvf $FILENAME $SOURCE_DIR
 mv $FILENAME  $DESTINATION_DIR
+echo "Files in source dir have been archived and moved to destination dir"
