@@ -6,4 +6,4 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 
 
 tar -czvf archive-$TIMESTAMP.tar.gz $SOURCE_DIR
-mv $SOURCE_DIRarchive-$TIMESTAMP.tar.gz  $DESTINATION_DIR
+mv -t $SOURCE_DIRarchive-$TIMESTAMP.tar.gz  $DESTINATION_DIR
