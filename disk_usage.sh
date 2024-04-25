@@ -14,4 +14,4 @@ do
     fi
 done  <<< $DISKUSAGE
 
-echo MESSAGE=$MESSAGE
+echo -e "MESSAGE=$MESSAGE"
