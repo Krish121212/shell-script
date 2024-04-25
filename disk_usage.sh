@@ -2,6 +2,7 @@
 
 DISKUSAGE=$(df -hT | grep xfs)
 THRESOULD=5
+MESSAGE=""
 
 while IFS= read -r line
 do 
@@ -9,6 +10,6 @@ do
     FOLDER=$(echo $line | awk -F " " '{print $7f}')
     if [ $USAGE -ge $THRESOULD ]
     then 
-        echo "For $FOLDER    usage is more than $THRESOULD: current usage: $USAGE" 
+        MESSAGE+="For $FOLDER usage is more than $THRESOULD: current usage: $USAGE" 
     fi
 done  <<< $DISKUSAGE
