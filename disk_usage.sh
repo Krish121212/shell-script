@@ -15,3 +15,7 @@ do
 done  <<< $DISKUSAGE
 
 echo -e "MESSAGE=$MESSAGE"
+
+echo "MESSAGE" | mail -s "subject" malladikrishnakishore@gmail.com
+
+##session 14 unix shell
