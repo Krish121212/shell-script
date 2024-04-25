@@ -13,3 +13,5 @@ do
         MESSAGE+="For $FOLDER usage is more than $THRESOULD: current usage: $USAGE" 
     fi
 done  <<< $DISKUSAGE
+
+echo MESSAGE=$MESSAGE
