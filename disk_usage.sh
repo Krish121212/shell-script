@@ -9,6 +9,6 @@ do
     FOLDER=$(echo $line | awk -F " " '{print $7f}')
     if [ $USAGE -ge $THRESOULD ]
     then 
-        echo "For $FOLDER usage is more than $THRESOULD: current usage: $USAGE" 
+        echo "For $FOLDER    usage is more than $THRESOULD: current usage: $USAGE" 
     fi
 done  <<< $DISKUSAGE
