@@ -3,7 +3,7 @@
 
 while IFS= read -r line
 do
-    if [ $line != $pwd ] 
+    if [ $line != 0 ] 
     then
         echo "mail script"
     fi
