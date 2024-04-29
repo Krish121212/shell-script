@@ -3,7 +3,7 @@
 
 while IFS= read -r line
 do
-    if [ $line != ip-172-31-16-124.ec2.internal ] 
+    if [ $line != $pwd ] 
     then
         echo "mail script"
     fi
