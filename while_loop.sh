@@ -1,5 +1,6 @@
 #!/bin/bash/
 
+Top5=$()
 
 while IFS= read -r line
 do
