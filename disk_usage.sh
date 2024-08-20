@@ -17,5 +17,3 @@ done  <<< $DISKUSAGE
 echo -e "MESSAGE=$MESSAGE"
 
 echo "MESSAGE" | mailx -s "subject" malladikrishnakishore@gmail.com
-
-##session 14 unix shell
