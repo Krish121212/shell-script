@@ -10,3 +10,5 @@ echo "Top five word count: $wordcount"
 #do 
 #    echo "word count: $i"
 #done
+
+# awk '{print $1}' log_file.txt | sort | uniq -c | awk '$1 > 1'
