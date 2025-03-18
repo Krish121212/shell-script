@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 userid=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)

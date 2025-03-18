@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 SOURCE_DIR=/home/ec2-user/shell-script/source_dir/*
 DESTINATION_DIR=/home/ec2-user/shell-script/destination_dir/

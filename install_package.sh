@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 package=$1
 userid=$(id -u)

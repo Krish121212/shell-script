@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 NAME1=KRISHNA
 NAME2=Vaishnavi

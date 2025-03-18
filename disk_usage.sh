@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 
 DISKUSAGE=$(df -hT | grep xfs)
 THRESOULD=5
